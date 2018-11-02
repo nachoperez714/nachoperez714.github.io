@@ -176,7 +176,7 @@ img::-moz-selection {
 }
 
 header.masthead {
-  padding-top: 10rem;
+  padding-top: 5rem;
   padding-bottom: calc(10rem - 56px);
   background-image: url("../img/header.jpg");
   background-position: center center;
@@ -365,7 +365,8 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 header.masthead .device-container {
-  max-width: 325px;
+  max-width: 225px;
+  margin-top: 10px;
   margin-right: auto;
   margin-left: auto;
 }
