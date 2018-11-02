@@ -45,6 +45,11 @@ h6 {
 
 .bg-primary {
   background-color: #c5262a !important;
+  padding-top: 60px;
+}
+
+.bg-white {
+  padding-top: 60px;
 }
 
 .bg-dark {
