@@ -17,7 +17,7 @@ body {
 hr {
   max-width: 50px;
   border-width: 3px;
-  border-color: #c5262a;
+  border-color: #b1e4d5;
 }
 
 hr.light {
@@ -40,15 +40,17 @@ h3,
 h4,
 h5,
 h6 {
+  color: rgb(80,86,82);
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .bg-primary {
-  background-color: #c5262a !important;
+  background-color: #b1e4d5 !important;
   padding-top: 60px;
 }
 
-.bg-white {
+.bg-secondary {
+  background-color: rgb(252,219,238) !important;
   padding-top: 60px;
 }
 
@@ -181,8 +183,6 @@ img::-moz-selection {
 }
 
 header.masthead {
-  padding-top: 5rem;
-  padding-bottom: calc(10rem - 56px);
   background-image: url("../img/header.jpg");
   background-position: center center;
   background-size: cover;
@@ -228,8 +228,34 @@ header.masthead p {
 }
 
 .service-box {
-  max-width: 400px;
+  max-width: 33%;
+  max-width: 150px;
 }
+
+#bottom-triangle{
+  width:0;
+  height:0;
+  border-style:solid;
+  border-width:160px 100vw 0 0;
+  border-color: rgb(252,219,238) transparent transparent transparent;
+  }
+
+@media (max-width: 960px){
+    #bottom-triangle
+    {border-width:80px 100vw 0 0;}}
+
+
+#top-triangle{
+      width:0;
+      height:0;
+      border-style:solid;
+      border-width:160px 100vw 0 0;
+      border-color: transparent #b1e4d5 transparent transparent;
+      }
+
+    @media (max-width: 960px){
+        #top-triangle
+        {border-width:80px 100vw 0 0;}}
 
 .portfolio-box {
   position: relative;
@@ -295,7 +321,19 @@ header.masthead p {
 }
 
 .text-primary {
-  color: #c5262a !important;
+  color: rgb(80,86,82) !important;
+}
+
+.logo-div{
+  width: 33%;
+  display: block;
+  height: 150px;
+  line-height: 150px;
+  vertical-align: middle;
+}
+
+.service-div{
+  width: 33%;
 }
 
 .btn {
@@ -313,8 +351,8 @@ header.masthead p {
 
 .btn-primary {
   margin: 10px;
-  background-color: #c5262a;
-  border-color: #c5262a;
+  background-color: #b1e4d5;
+  border-color: #b1e4d5;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
@@ -347,27 +385,7 @@ footer ul.quicklinks {
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-ul.social-buttons {
-  margin-bottom: 0;
-}
 
-ul.social-buttons li a {
-  font-size: 20px;
-  line-height: 50px;
-  display: block;
-  width: 50px;
-  height: 50px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  color: white;
-  border-radius: 100%;
-  outline: none;
-  background-color: #212529;
-}
-
-ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #c5262a;
-}
 
 header.masthead .device-container {
   max-width: 225px;
@@ -376,8 +394,8 @@ header.masthead .device-container {
   margin-left: auto;
 }
 
-header.masthead .device-container .screen img {
-  border-radius: 3px;
+.social{
+  height:50px;
 }
 
 @media (min-width: 992px) {
