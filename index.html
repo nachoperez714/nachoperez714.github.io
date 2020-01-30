@@ -75,6 +75,16 @@
 
     <section class="bg-primary"  id="about">
       <div class="container">
+        <div class="lang">
+          <a href="#" id="lang-toggle" class="lang__option lang__option--current">
+            en <span class="lang__chevron">›</span>
+          </a>
+          <ul class="lang__list">
+           <li>
+             <a href="#" class="lang__option">es</a>
+           </li>
+         </ul>
+      </div>
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
             <h2 class="section-heading  "> <b>UX Writing</b></h2>
@@ -164,6 +174,9 @@
     <div id="top-triangle"></div>
     <section class="bg-primary" id="contact">
       <div class="container">
+        <row>
+          <div class="col-lg-3">
+          </div>
         <div class="col-lg-6">
           <h2 class="section-heading  "><b>Contactanos!</b></h2>
           <hr class="my-4">
@@ -188,6 +201,7 @@
             <button id="sendMessageButton" class="btn btn-light btn-xl text-uppercase" type="submit">Enviar</button>
           </div>
         </div>
+      </row>
       </div>
     </section>
 
@@ -243,15 +257,22 @@
     {
       "@context": "http://schema.org/",
       "@type": "WebSite",
-      "name": "Mechanican",
-      "alternateName": "On demand car repair service",
+      "name": "UX writing",
+      "alternateName": "UX writing",
       "url": "https://nachoperez714.github.io/",
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://nachoperez714.github.io/{search_term_string}Mechanican",
+        "target": "https://nachoperez714.github.io/{search_term_string}UXWriting",
         "query-input": "required name=search_term_string"
       }
     }
+    </script>
+
+    <script>
+      document.getElementById('lang-toggle').addEventListener('click', function(e){
+        e.preventDefault();
+        $(this).parent().toggleClass('is-open');
+      });
     </script>
 
   </body>

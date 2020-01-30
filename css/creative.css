@@ -63,7 +63,7 @@ h6 {
 }
 
 section {
-  padding: 8rem 0;
+  padding: 6rem 0;
 }
 
 .section-heading {
@@ -208,18 +208,6 @@ header.masthead p {
   }
 }
 
-@media (min-width: 992px) {
-  header.masthead {
-    height: 100vh;
-    min-height: 650px;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  header.masthead h1 {
-    font-size: 3rem;
-    color: #c5262a;
-  }
-}
 
 @media (min-width: 1200px) {
   header.masthead h1 {
@@ -249,13 +237,13 @@ header.masthead p {
       width:0;
       height:0;
       border-style:solid;
-      border-width:160px 100vw 0 0;
-      border-color: transparent #b1e4d5 transparent transparent;
+      border-width:0 100vw 160px 0;
+      border-color: transparent transparent #b1e4d5 transparent;
       }
 
     @media (max-width: 960px){
         #top-triangle
-        {border-width:80px 100vw 0 0;}}
+        {border-width:0 100vw 80px 0;}}
 
 .portfolio-box {
   position: relative;
@@ -398,8 +386,68 @@ header.masthead .device-container {
   height:50px;
 }
 
-@media (min-width: 992px) {
-  header.masthead .device-container {
-    max-width: 325px;
-  }
+.col-lg-6{
+  margin:auto;
+}
+
+
+body {
+  background-color: transparent;
+  font-family: sans-serif;
+}
+
+.lang a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+  .lang {
+  border: solid 1px black;
+  min-width: 4rem;
+  width: 5%;
+  position: relative;
+}
+  .lang__list,
+  .lang__option {
+  display: block;
+}
+  .lang__chevron {
+  display: inline-block;
+  float: right;
+  transform: rotate(90deg);
+}
+  .lang__option {
+  padding: 0.5rem;
+}
+
+.lang__option:hover  {
+  background-color: white;
+}
+
+.lang__option:focus {
+  background-color: white;
+}
+  .lang__list {
+  display: none;
+  list-style-type: none;
+}
+  .is-open {
+  border-bottom: none;
+}
+  .is-open .lang__list {
+  border: solid 1px;
+  border-top: none;
+  display: block;
+  position: absolute;
+  left: -1px;
+  width: 100%;
+  padding-right: 3.9rem;
+}
+  .is-open .lang__chevron {
+  transform: rotate(270deg);
+}
+
+ul {
+  padding-inline-start:0px;
 }
